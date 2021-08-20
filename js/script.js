@@ -1,23 +1,27 @@
 "use strict";
 
-const str = "teSt";
-const arr=[1,2,4];
-//console.log(str[2]='d');
+function first(){
+    // do something
+    setTimeout(function(){
+        console.log(1);
+    },500);
+}
 
-//console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str);
+function second() {
+    console.log(2);
 
-const fruit = 'Some fruit';
-console.log(fruit.indexOf('q'));
+}
+first();
+second();
 
-const logg = 'Hello world';
+function learnJS(lang,callback){
+    console.log(`Я учу: ${lang}`);
+    callback();
 
-console.log(logg.slice(6));
+}
 
-console.log(logg.substring(6));
+function done(){
+    console.log("Я прошел этот урок!");
+}
 
-console.log(logg.substr(6,5));
-
-const num=12.2;
-console.log(Math.round(num));
+learnJS('JavaScript',done);
