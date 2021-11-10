@@ -1,27 +1,16 @@
-"use strict";
-
-function first(){
-    // do something
-    setTimeout(function(){
-        console.log(1);
-    },500);
+function hello(){
+    console.log("Hello World");
 }
+hello();
 
-function second() {
-    console.log(2);
-
+function hi(){
+    console.log("Say hi!");
 }
-first();
-second();
+hi();
 
-function learnJS(lang,callback){
-    console.log(`Я учу: ${lang}`);
-    callback();
+const arr = [1,14,4,30,54],
+sorted=arr.sort(compareNum);
 
+function compareNum(a,b){
+    return a-b;
 }
-
-function done(){
-    console.log("Я прошел этот урок!");
-}
-
-learnJS('JavaScript',done);
